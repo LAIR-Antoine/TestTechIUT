@@ -20,8 +20,12 @@ Le projet doit nous amener à utiliser Symfony. Ce fichier sera complété au fu
 ```
     # Ajout de profiler en dev pour faciliter le debuggage
     composer require profiler --dev
+
+    composer require annotations
+
+    composer require twig
 ```
-Il faudra penser à passer le .env en prod sur le VPS pour qu'il n'apparaisse pas sur le site en ligne.
+Il faudra penser à passer le .env en prod sur le VPS pour que profiler n'apparaisse pas sur le site en ligne.
 
 ### Mise en ligne
 
