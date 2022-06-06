@@ -14,8 +14,12 @@ body {
 .navbar-dark .nav-link {
     color: white !important;
 }
-.navbar-dark li {
-    padding: 8px 16px !important;
+.navbar-dark .dropdown-item {
+    text-transform: uppercase !important;
+}
+
+.navbar-dark .nav-item {
+    padding: 8px 8px !important;
 }
 .navbar-light .nav-link {
     color: #646363 !important;
