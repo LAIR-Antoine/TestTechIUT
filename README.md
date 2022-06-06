@@ -14,3 +14,11 @@ Le projet doit nous amener à utiliser Symfony. Ce fichier sera complété au fu
     # Choix d'utiliser Composer
     composer create-project symfony/skeleton TestTechIUT
 ```
+
+### Environnement de développement
+
+```
+    # Ajout de profiler en dev pour faciliter le debuggage
+    composer require profiler --dev
+```
+Il faudra penser à passer le .env en prod sur le VPS pour qu'il n'apparaisse pas sur le site en ligne.
