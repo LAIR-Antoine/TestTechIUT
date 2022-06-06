@@ -21,3 +21,15 @@ footer {
 .uppercase {
     text-transform: uppercase !important;
 }
+.video-container {
+    padding: 50px;
+    text-align: center;
+}
+.brochure {
+    padding: 50px;
+    text-align: center;
+    
+}
+.brochure img {
+    max-height: 400px;
+}
