@@ -22,8 +22,9 @@ Le projet doit nous amener à utiliser Symfony. Ce fichier sera complété au fu
     composer require profiler --dev
 
     composer require annotations
-
     composer require twig
+    composer require symfony/asset
+
 ```
 Il faudra penser à passer le .env en prod sur le VPS pour que profiler n'apparaisse pas sur le site en ligne.
 
