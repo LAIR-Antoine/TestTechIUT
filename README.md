@@ -22,3 +22,10 @@ Le projet doit nous amener à utiliser Symfony. Ce fichier sera complété au fu
     composer require profiler --dev
 ```
 Il faudra penser à passer le .env en prod sur le VPS pour qu'il n'apparaisse pas sur le site en ligne.
+
+### Mise en ligne
+
+Pour mettre à jour les "dépendances" s'il y en a des nouvelles.
+```
+    composer install --no-dev --optimize-autoloader
+```

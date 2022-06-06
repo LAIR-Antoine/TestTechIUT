@@ -13,6 +13,7 @@
         "symfony/flex": "^2",
         "symfony/framework-bundle": "*",
         "symfony/runtime": "*",
+        "symfony/twig-bundle": "6.1.*",
         "symfony/yaml": "*"
     },
     "require-dev": {
