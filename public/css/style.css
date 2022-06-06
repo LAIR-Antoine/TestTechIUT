@@ -3,3 +3,21 @@
 body {
     font-family: 'Inter', sans-serif;
 }
+.nav-link {
+    text-transform: uppercase !important;
+    color: white !important;
+}
+.navbar {
+    background-color: #646363 !important;
+}
+
+footer {
+    background-color: #646363 !important;
+    color: white !important;
+    margin-top: 50px;
+    text-align: center;
+    padding: 20px;
+}
+.uppercase {
+    text-transform: uppercase !important;
+}
