@@ -3,12 +3,49 @@
 body {
     font-family: 'Inter', sans-serif;
 }
+
 .nav-link {
     text-transform: uppercase !important;
+}
+.navbar-dark {
+    background-color: #646363 !important;
+    
+}
+.navbar-dark .nav-link {
     color: white !important;
 }
-.navbar {
-    background-color: #646363 !important;
+.navbar-dark li {
+    padding: 8px 16px !important;
+}
+.navbar-light .nav-link {
+    color: #646363 !important;
+}
+.navbar-light i {
+    font-size: 30px;
+}
+.navbar-light p {
+    width: 30px !important;
+    height: 25px !important;
+}
+.d-flex {
+    
+    margin-top: 10px !important;
+    padding: 10px 20px !important;
+}
+.d-flex .btn {
+    border-radius: 20px !important;
+}
+.me-2 {
+    
+    border-radius: 20px !important;
+    border: solid 1px #646363 !important;
+}
+.me-2::placeholder {
+    color: #646363 !important;
+}
+.d-flex i {
+    font-size: 15px !important;
+    color: #646363 !important;
 }
 
 footer {
@@ -32,4 +69,13 @@ footer {
 }
 .brochure img {
     max-height: 400px;
+}
+.LogoNav {
+    position: absolute;
+    top: 10px !important;
+    left: 20px !important;
+    z-index: 5;
+}
+nav {
+    height: 40px !important;
 }

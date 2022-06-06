@@ -22,6 +22,9 @@
             {# Import JS Bootstrap #}
             <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 
+            {# Import Fontawesome Icons #}
+            <script src="https://kit.fontawesome.com/2be809da13.js" crossorigin="anonymous"></script>
+
         {% endblock %}
     </head>
     <body>
@@ -34,8 +37,8 @@
                     <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-                    <a class="navbar-brand" href="#"><img width="100" src="{{ asset('images/logo.png') }}" alt="Logo IUT" /></a>
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <a class="navbar-brand" href="#"></a>
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                         <li class="nav-item">
                             <a class="nav-link" href="#">Accueil</a>
                         </li>
@@ -68,6 +71,72 @@
                     </div>
                 </div>
             </nav>
+            <img class="LogoNav" height="70" src="{{ asset('images/logo.png') }}" alt="Logo IUT" />
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                    <a class="navbar-brand" href="#"></a>
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">intranet</a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link disabled" href="#">|</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Bureau virtuel</a>
+                        </li>  
+                        <li class="nav-item"><a class="nav-link disabled" href="#">|</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Messagerie</a>
+                        </li> 
+                        <li class="nav-item"><a class="nav-link disabled" href="#">|</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">annuaire</a>
+                        </li>  
+                        <li class="nav-item"><a class="nav-link disabled" href="#">|</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">bibliothèque</a>
+                        </li>
+                        <li class="nav-item">
+                            <p></p>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fa-brands fa-facebook-square"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fa-brands fa-twitter"></i></a>
+                        </li> 
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fa-brands fa-instagram"></i></a>
+                        </li> 
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fa-brands fa-youtube"></i></a>
+                        </li> 
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fa-brands fa-linkedin"></i></a>
+                        </li> 
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fa-brands fa-flickr"></i></a>
+                        </li>  
+                        <li class="nav-item">
+                            <p></p>
+                        </li>                   
+                    </ul>
+                    <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Rechercher..." aria-label="Search">
+        <button class="btn" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+      </form>
+                    
+                    </div>
+                </div>
+            </nav>
+            
         
         {% endblock %}
         {% block body %}{% endblock %}
