@@ -9,6 +9,7 @@
         
         {% block stylesheets %}
             {{ encore_entry_link_tags('app') }}
+            <link href="{{ asset('css/style.css') }}" rel="stylesheet" />
         {% endblock %}
 
         {% block javascripts %}
@@ -18,7 +19,23 @@
     <body>
         {% block nav %}
         
-            
+            <section class="navigation">
+                <div class="nav-container">
+                    <nav>
+                        <ul>
+                            <li>Accueil</li>
+                            <li>L'IUT</li>
+                            <li>Formations</li>
+                            <li>International</li>
+                            <li>Entreprises</li>
+                            <li>Recherche</li>
+                            <li>Vie étudiante</li>
+                            <li>Candidatures</li>
+                            <li>Evènement</li>
+                        </ul>
+                    </nav>
+                </div>
+            </section>
         
         {% endblock %}
         {% block body %}{% endblock %}
