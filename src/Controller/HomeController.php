@@ -46,19 +46,19 @@ class HomeController extends AbstractController
 
         $evenements = [
             [
-                'titre' => 'Concours plaidoiries 2022',
-                'date' => '25/05/2022',
-                'image' => 'http://www.iut-troyes.univ-reims.fr/media/images/2022/Visuel-plaidoiries2022.jpg'
+                'titre' => 'Job Dating Alternance à l\'IUT de Troyes',
+                'date' => '16/05/2022',
+                'image' => 'http://www.iut-troyes.univ-reims.fr/media/images/2022/Visuel-Actu-jobdating.jpg'
             ],
             [
-                'titre' => 'Rénovation énergétique de l\'IUT',
-                'date' => '20/05/2022',
-                'image' => 'http://www.iut-troyes.univ-reims.fr/media/images/2022/Visuel-Actu-renovationenergetique2022.jpg'
+                'titre' => 'Afterwork Entreprises : découvrez le B.U.T.',
+                'date' => '07/04/2022',
+                'image' => 'http://www.iut-troyes.univ-reims.fr/media/images/2022/VisuelSite-Afterwork.jpg'
             ],
             [
-                'titre' => 'Afterwork GMP & futur Job Dating',
-                'date' => '18/05/2022',
-                'image' => 'http://www.iut-troyes.univ-reims.fr/media/images/2022/Visuel-afterworkGMP-mai2022.jpg'
+                'titre' => 'Journée sportive à l\'IUT : 5 mai 2022',
+                'date' => '15/03/2022',
+                'image' => 'http://www.iut-troyes.univ-reims.fr/media/images/2022/Visuel-journeesport-mai2022.jpg'
             ],
         ];
 
