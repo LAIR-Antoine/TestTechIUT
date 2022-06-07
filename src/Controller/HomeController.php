@@ -7,10 +7,11 @@ use Symfony\Component\Routing\Annotation\Route;
 
 class HomeController extends AbstractController
 {
+    /* Route sous forme d'annotation */
     #[Route("/", name:"app_home")]
     public function home()
     {
-
+        /* Tableau des actualités de la page d'accueil */
         $actualites = [
             [
                 'titre' => 'Concours plaidoiries 2022',
@@ -44,6 +45,7 @@ class HomeController extends AbstractController
             ],
         ];
 
+        /* Tableau des évènements de la page d'accueil */
         $evenements = [
             [
                 'titre' => 'Job Dating Alternance à l\'IUT de Troyes',
@@ -64,6 +66,7 @@ class HomeController extends AbstractController
 
         return $this->render(
             'home.html.twig',
+            /* Import des tableaux sous les noms actus et events -> récupéré en Twig sur la page home.html.twig */
             [
                 'actus' => $actualites,
                 'events' => $evenements,

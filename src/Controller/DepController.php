@@ -7,9 +7,11 @@ use Symfony\Component\Routing\Annotation\Route;
 
 class DepController extends AbstractController
 {
+    /* Route sous forme d'annotation */
     #[Route("/departements", name:"app_dep")]
     public function dep()
     {
+        /* Tableau d'informations de la page départements */
         $departements =  [
             [
                 'nom' => 'Métiers du Multimédia et de l\'Internet',
@@ -72,6 +74,7 @@ class DepController extends AbstractController
 
         return $this->render(
             'dep.html.twig',
+            /* Import du tableau sous le noms departements -> récupéré en Twig sur la page dep.html.twig */
             [
                 'departements' => $departements,
             ]

@@ -1,25 +1,32 @@
+{# Import du template de page HTML (head, nav et footer) #}
 {% extends 'base.html.twig' %}
 
+{# Block pour modifier facilement le titre de la page #}
 {% block title %}
 Accueil
 {% endblock %}
 
 {% block body %}
-  <div class="container">
-    <div class="row align-items-center">
-        <div class="col-lg-8 video-container">
-          <iframe width="700" height="400" src="https://www.youtube.com/embed/b9rnrY7mIPs" frameborder="0" allowfullscreen></iframe>
-        </div>
-        <div class="col-lg-4 brochure">
-        <img src="{{ asset('images/edito-brochurealternance-entreprises2022.jpg') }}" alt="Brochure alternance" />
-        </div>
-    </div>              
-  </div>
+{# Section 1 : Vidéo + Brochure #}
+<div class="container">
+  <div class="row align-items-center">
+    <div class="col-lg-8 video-container">
+      <iframe width="700" height="400" src="https://www.youtube.com/embed/b9rnrY7mIPs" frameborder="0" allowfullscreen></iframe>
+    </div>
+    <div class="col-lg-4 brochure">
+      {# Récupération des images avec les assets #}
+      <img src="{{ asset('images/edito-brochurealternance-entreprises2022.jpg') }}" alt="Brochure alternance" />
+    </div>
+  </div>              
+</div>
 
-  <h1 class="actuTitle">Les dernières actualités</h1>
-  <div class="container actu">
-    <div class="row align-items-center">
+{# Section 2 : Actus #}
 
+<h1 class="actuTitle">Les dernières actualités</h1>
+<div class="container actu">
+  <div class="row align-items-center">
+
+    {# Boucle forreach pour afficher les actualités #}
     {% for value in actus %}
 
       <div class="col-lg-4">
@@ -27,102 +34,89 @@ Accueil
           <div class="card card-actu">
           <img src="{{ value.image }}" class="card-img-top" alt="{{ value.titre }}">
             <div class="card-body">
-              
               <h5 class="card-text">{{ value.titre }}</h5>
               <p class="card-text">{{ value.date }}</p>
               <button type="button" class="btn btn-primary">Lire plus...</button>
-             
+            </div>
           </div>
         </div>
-      </div>
       </div>
 
     {% endfor %}
 
-    </div>
-    <button type="button" class="btn btn-secondary">Voir toutes les actualités</button> 
-    </div>
+  </div>
+  <button type="button" class="btn btn-secondary">Voir toutes les actualités</button> 
+</div>
 
-    <h1 class="eventTitle">Les derniers évènements</h1>
-  <div class="container event">
-    <div class="row align-items-center">
+{# Section 3 : Evènements #}
 
+<h1 class="eventTitle">Les derniers évènements</h1>
+<div class="container event">
+  <div class="row align-items-center">
+
+    {# Boucle forreach pour afficher les évènements #}
     {% for value in events %}
 
       <div class="col-lg-4">
         <div class="module-border-wrap">
           <div class="card card-event">
           <img src="{{ value.image }}" class="card-img-top" alt="{{ value.titre }}">
-            <div class="card-body">
-              
+            <div class="card-body"> 
               <h5 class="card-text">{{ value.titre }}</h5>
               <p class="card-text">{{ value.date }}</p>
               <button type="button" class="btn btn-primary">Lire plus...</button>
-             
+            </div>
           </div>
         </div>
-      </div>
       </div>
 
     {% endfor %}
 
-    </div>
-    <button type="button" class="btn btn-secondary">Voir toutes les évènements</button> 
-    </div>
+  </div>
+  <button type="button" class="btn btn-secondary">Voir toutes les évènements</button> 
+</div>
 
-        <h1 class="numberTitle">Les derniers évènements</h1>
-  <div class="container number">
-    <div class="row align-items-center">
+{# Section 4 : Nombres #}
 
-   
-
-      <div class="col-lg-4">
-        <div class="module-border-wrap">
-          <div class="card card-number">
-          
-            <div class="card-body">
-              <i class="big-icon fa-solid fa-book"></i>
-              <h2 class="card-text">20</h2>
-              <h5 class="card-text">Formations dispensées</h5>
-             
+<h1 class="numberTitle">Quelques chiffres</h1>
+<div class="container number">
+  <div class="row align-items-center">
+    <div class="col-lg-4">
+      <div class="module-border-wrap">
+        <div class="card card-number">
+          <div class="card-body">
+            <i class="big-icon fa-solid fa-book"></i>
+            <h2 class="card-text">20</h2>
+            <h5 class="card-text">Formations dispensées</h5>
           </div>
         </div>
       </div>
-      </div>
-      <div class="col-lg-4">
-        <div class="module-border-wrap">
-          <div class="card card-number">
-          
-            <div class="card-body">
-              <i class="big-icon fa-solid fa-school"></i>
-              <h2 class="card-text">30</h2>
-              <h5 class="card-text">Universités partenaires</h5>
-             
+    </div>
+    
+    <div class="col-lg-4">
+      <div class="module-border-wrap">
+        <div class="card card-number">
+          <div class="card-body">
+            <i class="big-icon fa-solid fa-school"></i>
+            <h2 class="card-text">30</h2>
+            <h5 class="card-text">Universités partenaires</h5>
           </div>
         </div>
       </div>
-      </div>
-      <div class="col-lg-4">
-        <div class="module-border-wrap">
-          <div class="card card-number">
-          
-            <div class="card-body">
-              <i class="big-icon fa-solid fa-graduation-cap"></i>
-              <h2 class="card-text">895</h2>
-              <h5 class="card-text">Diplômés chaque année</h5>
-             
+    </div>
+    <div class="col-lg-4">
+      <div class="module-border-wrap">
+        <div class="card card-number">
+          <div class="card-body">
+            <i class="big-icon fa-solid fa-graduation-cap"></i>
+            <h2 class="card-text">895</h2>
+            <h5 class="card-text">Diplômés chaque année</h5>
           </div>
         </div>
       </div>
-      </div>
-
-
-
     </div>
-    <button type="button" class="btn btn-secondary">En savoir plus...</button> 
-    </div>
-
-
-
+  </div>
+  <button type="button" class="btn btn-secondary">En savoir plus...</button> 
+</div>
 
 {% endblock %}
