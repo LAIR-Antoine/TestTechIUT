@@ -52,4 +52,8 @@ Pour les icônes, j'ai l'habitude d'utiliser FontAwesome sur mes projets.
 ### Tips
 
 - Pour appliquer un dégradé sur une bordure, on peut créer une div sous celle où on veut appliquer la bordure et lui appliquer un padding légèrement plus grand. On met alors le linear-gradient sur la div du dessous.
+- Dans les fichiers en .html.twig, pour changer de page, on peut utiliser les liens comme ceci :
+```
+<a href="{{ path('NomDeLaRoute') }}"></a>
+```
 
