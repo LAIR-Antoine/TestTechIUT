@@ -114,11 +114,23 @@ nav {
     right: 25px;
     bottom: 10px;
 }
-.card {
+.actu {
+    text-align: center;
+}
+.actu img {
+    width: 75%;
+    margin: 20px auto 10px auto;
+}
+.card-dep {
     border-radius: 20px !important;
     border: none !important;
     height: 375px !important;
     
+}
+.card-actu {
+    border-radius: 20px !important;
+    border: none !important;
+        
 }
 .module-border-wrap {
     position: relative;
@@ -135,4 +147,44 @@ nav {
 }
 .emptyRespo {
     height: 100px !important;
+}
+.btn-primary {
+    background-color: #F9B000 !important;
+    border-radius: 20px !important;
+    border: none !important;
+}
+.btn-secondary {
+    background-color: #646363 !important;
+    border-radius: 20px !important;
+    border: none !important;
+    margin-bottom: 50px;
+}
+.actuTitle {
+    color: #F9B000;
+    font-weight: bold;
+    padding: 0 0 20px 50px;
+}
+
+.event {
+    text-align: center;
+}
+.event img {
+    width: 75%;
+    margin: 20px auto 10px auto;
+}
+.card-event {
+    border-radius: 20px !important;
+    border: none !important;
+        
+}
+.eventTitle {
+    color: #F9B000;
+    font-weight: bold;
+    padding: 0 0 20px 50px;
+}
+
+.numberTitle {
+    color: #F9B000;
+    font-weight: bold;
+    padding: 0 0 20px 50px;
 }
