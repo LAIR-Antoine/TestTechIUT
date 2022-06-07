@@ -21,7 +21,11 @@ Départements
               <h2 class="card-title">{{ value.sigle }}</h2>
               <h5 class="card-text">{{ value.nom }}</h5>
               <p class="card-text indent">{{ value.presentation }}</p>
-              <p class="card-text">Responsable :<br />{{ value.responsable }}<br />{{ value.mail_responsable }}</p>
+              {% if value.responsable %}
+                <p class="card-text">Responsable :<br />{{ value.responsable }}<br /><a class="mail_respo" href="mailto:{{ value.mail_responsable }}">{{ value.mail_responsable }}</a></p>
+              {% else %}
+                <div class="emptyRespo"></div>
+              {% endif %}
             </div>
             <img width="150" src="{{ value.logo }}" class="card-img-bottom" alt="Logo">
           </div>

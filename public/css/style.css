@@ -117,14 +117,22 @@ nav {
 .card {
     border-radius: 20px !important;
     border: none !important;
+    height: 375px !important;
+    
 }
 .module-border-wrap {
     position: relative;
     background: linear-gradient(135deg,rgba(243, 243, 243, 1), rgba(101, 99, 100, 1));
     padding: 5px;
     border-radius: 25px !important;
+    margin-bottom: 20px;
 }
 .indent {
     text-indent: 30px;
 }
-
+.mail_respo {
+    color: #646363 !important;
+}
+.emptyRespo {
+    height: 100px !important;
+}
