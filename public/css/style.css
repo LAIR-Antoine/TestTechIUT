@@ -90,6 +90,7 @@ nav {
     font-weight: 500;
     text-align: center;
     font-size: 20px;
+    color: #646363;
 }
 .introDep h1 {
     color: #F9B000;
@@ -103,6 +104,7 @@ nav {
 }
 .dep h5 {
     text-align: center !important;
+    color: #646363;
 }
 .dep p {
     text-align: justify;
@@ -130,7 +132,7 @@ nav {
 .card-actu {
     border-radius: 20px !important;
     border: none !important;
-        
+    color: #646363;
 }
 .module-border-wrap {
     position: relative;
@@ -175,6 +177,7 @@ nav {
 .card-event {
     border-radius: 20px !important;
     border: none !important;
+    color: #646363;
         
 }
 .eventTitle {
@@ -187,4 +190,26 @@ nav {
     color: #F9B000;
     font-weight: bold;
     padding: 0 0 20px 50px;
+}
+.number {
+    text-align: center;
+}
+.card-number {
+    border-radius: 20px !important;
+    border: none !important;
+    background-color: #F9B000 !important;
+        
+}
+.number h2 {
+    text-align: center !important;
+    color: #646363;
+}
+.number h5 {
+    text-align: center !important;
+    color: #646363;
+}
+.big-icon {
+    font-size: 60px;
+    color: #646363;
+    padding: 10px;
 }
