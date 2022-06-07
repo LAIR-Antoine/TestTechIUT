@@ -7,7 +7,7 @@ use Symfony\Component\Routing\Annotation\Route;
 
 class DepController extends AbstractController
 {
-    #[Route("/testIUT/departements", name:"app_dep")]
+    #[Route("/departements", name:"app_dep")]
     public function dep()
     {
 

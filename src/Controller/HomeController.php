@@ -7,7 +7,7 @@ use Symfony\Component\Routing\Annotation\Route;
 
 class HomeController extends AbstractController
 {
-    #[Route("/testIUT/", name:"app_home")]
+    #[Route("/", name:"app_home")]
     public function home()
     {
 
