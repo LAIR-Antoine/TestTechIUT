@@ -62,7 +62,7 @@ class DepController extends AbstractController
                 'mail_responsable' => 'gilles.darmon@univ-reims.fr'
             ],
             [
-                'nom' => 'Métiers du Multimédia et de l\'internet',
+                'nom' => 'Département de la Formation Continue',
                 'sigle' => 'FC',
                 'logo' => 'https://www.iut-troyes.univ-reims.fr/assets/img/logo_197.jpg',
                 'presentation' => 'Ce type de formation concerne ceux qui sont rentrés dans la vie active et ont donc quitté la formation initiale (études). Elle permet aux personnes qui sont déjà dans la vie active de pouvoir continuer à se former pour améliorer leurs compétences et de s\'adapter aux nouvelles technologies, pratiques ou méthodes appliqués en entreprise.',
